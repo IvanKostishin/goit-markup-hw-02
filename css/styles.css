@@ -7,8 +7,30 @@
  */
  :root{
     --prim-text-color: #757575;
-
+    --prime-logo-color: #2196F3;
+    --secondary-logo-color: #000000;
+/* body */
  }
- .text {
+ .body-phrasing {
     color: var --prim-text-color;
  }
+ /* логотип */
+ .logo {
+color: var(--prime-logo-color);
+ }
+
+ .logo>span {
+   color: var(--secondary-logo-color);
+ }
+
+ .logo:hover,
+ .logo:focus {
+   color: var(--prime-logo-color);
+ }
+
+ .logo span:hover,
+ .logo span:focus {
+    color: var(--prime-logo-color);
+ }
+ /* навігація */
+ 
