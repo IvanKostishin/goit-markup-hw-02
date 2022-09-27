@@ -2,35 +2,90 @@
 колір тексту  #757575;
 основний колір логотипу #2196F3
 хедер другорядний колір логотипу #000000
- футер другорядний колір логотипу та колір герою #FFFFFF
+  колір герою #FFFFFF
  колір в тег адресс rgba(255, 255, 255, 0.6)
  */
  :root{
     --prim-text-color: #757575;
+    --secondary-text-color: #212121;
     --prime-logo-color: #2196F3;
     --secondary-logo-color: #000000;
-/* body */
+--hero-color: #FFFFFF;
+--hero-bgc-color: #2F303A;
+--bg-bgc-color: #188CE8;
  }
- .body-phrasing {
-    color: var --prim-text-color;
- }
- /* логотип */
- .logo {
-color: var(--prime-logo-color);
- }
+ 
+ /* body */
+body {
+   background-color: #F5F5F5;
+   color: var(--prim-text-color);
+   font-family: Roboto, sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.7;
+   letter-spacing: 0.03em;
 
- .logo>span {
-   color: var(--secondary-logo-color);
- }
-
- .logo:hover,
- .logo:focus {
+}
+/* header */
+/* nav */
+.prime-logo {
    color: var(--prime-logo-color);
+   font-family: Raleway, sans-serif;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.2;
+   
+}
+.secondary-logo {
+  color: var(--secondary-logo-color);
+}
+
+/* nav */
+.anchor {
+   color: var(--secondary-text-color);
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+}
+.anchor:hover,
+.anchor:focus {
+   color: var(--prime-logo-color);
+}
+
+/* hero */
+.hero-section {
+   background-color: var(--hero-bgc-color);
+}
+.hero-title{
+color: var(--hero-color);
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+.prime-bg {
+   background-color: var(--prime-logo-color);
+   color: var(--hero-color);
+}
+.prime-bg:hover,
+.prime-bg:focus {
+   background-color: var(--bg-bgc-color);
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.88;
+   letter-spacing: 0.06em;
+}
+
+
+
+ .list {
+   list-style: none;
  }
 
- .logo span:hover,
- .logo span:focus {
-    color: var(--prime-logo-color);
- }
- /* навігація */
+.text {
+text-decoration: none;
+}
  
