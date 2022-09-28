@@ -11,13 +11,16 @@
     --prime-logo-color: #2196F3;
     --secondary-logo-color: #000000;
 --hero-color: #FFFFFF;
+--bgc-color: #F5F5F5;
+--secondary-bgc-color: #F5F4FA;
 --hero-bgc-color: #2F303A;
 --bg-bgc-color: #188CE8;
+--anhor-color: rgba(255, 255, 255, 0.6);
  }
  
  /* body */
 body {
-   background-color: #F5F5F5;
+   background-color: var(--bgc-color);
    color: var(--prim-text-color);
    font-family: Roboto, sans-serif;
    font-weight: 400;
@@ -31,6 +34,7 @@ body {
 .prime-logo {
    color: var(--prime-logo-color);
    font-family: Raleway, sans-serif;
+   font-style: normal;
    font-weight: 700;
    font-size: 26px;
    line-height: 1.2;
@@ -69,7 +73,19 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 }
 
-.section-title {
+/* section */
+.sectoin-title {
+   color: var(--secondary-text-color);
+   font-style: normal;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+}
+.section-secondary-title {
+ background-color: var(--secondary-bgc-color);  
+}
+
+.section-block-title {
    color: var(--secondary-text-color);
    font-style: normal;
    font-weight: 700;
@@ -91,7 +107,37 @@ text-transform: uppercase;
    letter-spacing: 0.06em;
 }
 
+/* footer */
+.fotbounding-boxe {
+   background-color: var(--hero-bgc-color);
+}
 
+.fotbounding-boxe-prime-logo {
+   color: var(--prime-logo-color);
+   font-family: Raleway, sans-serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.2;
+}
+
+.fotbounding-boxe-secondary-logo {
+   color: var(--hero-color);
+}
+.secondary-anchor {
+   color: var(--hero-color);
+   font-style: normal;
+   
+   
+}
+.secondary-anchor:hover,
+.secondary-anchor:focus {
+   color: var(--prime-logo-color);
+}
+
+.secondary-anchor:visited {
+   color: rgba(255, 255, 255, 00.06em); 
+}
 
  .list {
    list-style: none;
