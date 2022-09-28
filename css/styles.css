@@ -69,14 +69,15 @@ text-transform: uppercase;
 .prime-bg {
    background-color: var(--prime-logo-color);
    color: var(--hero-color);
+   font-weight: 700;
+      font-size: 16px;
+      line-height: 1.88;
+      letter-spacing: 0.06em;
 }
 .prime-bg:hover,
 .prime-bg:focus {
    background-color: var(--bg-bgc-color);
-   font-weight: 700;
-   font-size: 16px;
-   line-height: 1.88;
-   letter-spacing: 0.06em;
+  
 }
 
 
